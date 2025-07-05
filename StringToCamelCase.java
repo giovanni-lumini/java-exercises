@@ -16,13 +16,14 @@ public class StringToCamelCase {
         String newStr = "";
 
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == '-' || str.charAt(i) == '_') {
+            char currentChar = str.charAt(i);
+            if (currentChar == '-' || currentChar == '_') {
                 char charAfter = str.charAt(i + 1);
-                String charAfterToString = Character.toString(charAfter).toUpperCase();
-                newStr += charAfterToString;
+                char charAfterUpper = Character.toUpperCase(charAfter);
+                newStr += charAfterUpper;
                 i++;
             } else {
-                newStr += str.charAt(i);
+                newStr += currentChar;
             }
         }
 
