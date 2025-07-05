@@ -19,10 +19,3 @@ public class BuildSquare {
         System.out.println(generateSquare(n));
     }
 }
-
-/*
- * pseudo codice
- * -ciclare n. volte quanto il valore di n
- * -inserire un "+" in una stringa, quante volte il valore di n
- * -stampare la stringa quante volte il valore di n
- */
